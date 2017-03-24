@@ -14,5 +14,7 @@ mysql:
      - MYSQL_ROOT_PASSWORD=password
      - MYSQL_DATABASE=wordpress
      working_dir: /var/www/html
-    volumes:
-     - wordpress/wp-content/:/var/www/html/wp-content
+    volumes:  
+    - plugins/:/var/www/html/wp-content/plugins
+    - themes/:/var/www/html/wp-content/themes
+     
